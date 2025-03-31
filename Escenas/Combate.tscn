@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bi6s76sqq6i8p"]
+
+[ext_resource type="Script" path="res://Combate.gd" id="1_omhbp"]
+[ext_resource type="PackedScene" uid="uid://hu0p7fryvwgi" path="res://Escenas/Player.tscn" id="2_arodm"]
+[ext_resource type="PackedScene" uid="uid://cg83hgxck5655" path="res://malo.tscn" id="3_blmir"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_omhbp")
+player_scene = ExtResource("2_arodm")
+enemy_scene = ExtResource("3_blmir")
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="PlayerSpawn" type="Marker2D" parent="."]
+position = Vector2(24, 32)
+
+[node name="EnemySpawn" type="Marker2D" parent="."]
+position = Vector2(120, 32)
