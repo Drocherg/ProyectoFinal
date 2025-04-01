@@ -4,6 +4,4 @@
 
 [node name="MenuPrincipal" type="Node2D"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
 [node name="Menu" parent="." instance=ExtResource("1_tpc8b")]

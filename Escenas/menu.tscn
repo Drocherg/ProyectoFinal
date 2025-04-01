@@ -7,8 +7,7 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 32.0
-offset_right = -28.0
+offset_right = -60.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ap2sx")
@@ -32,7 +31,6 @@ uppercase = true
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 0
 text = "JUGAR"
 
 [node name="Button2" type="Button" parent="MarginContainer/VBoxContainer"]
