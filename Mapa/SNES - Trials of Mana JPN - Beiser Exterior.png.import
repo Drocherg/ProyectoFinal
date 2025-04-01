@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3mk42sy6y21b"
-path="res://.godot/imported/SNES - Trials of Mana JPN - Mirage Palace Interiors.png-1e370a6a4646a1d40bb5d2d675ae42cb.ctex"
+uid="uid://b7kw0hk54nhg2"
+path="res://.godot/imported/SNES - Trials of Mana JPN - Beiser Exterior.png-4dc17e437d6587a6355c0374afbdb9ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mapa/SNES - Trials of Mana JPN - Mirage Palace Interiors.png"
-dest_files=["res://.godot/imported/SNES - Trials of Mana JPN - Mirage Palace Interiors.png-1e370a6a4646a1d40bb5d2d675ae42cb.ctex"]
+source_file="res://Mapa/SNES - Trials of Mana JPN - Beiser Exterior.png"
+dest_files=["res://.godot/imported/SNES - Trials of Mana JPN - Beiser Exterior.png-4dc17e437d6587a6355c0374afbdb9ed.ctex"]
 
 [params]
 

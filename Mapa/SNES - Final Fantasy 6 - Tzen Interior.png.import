@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3mk42sy6y21b"
-path="res://.godot/imported/SNES - Trials of Mana JPN - Mirage Palace Interiors.png-1e370a6a4646a1d40bb5d2d675ae42cb.ctex"
+uid="uid://baqujlt3bokb8"
+path="res://.godot/imported/SNES - Final Fantasy 6 - Tzen Interior.png-e5abcd9fda28f4471b51590672b7dbaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mapa/SNES - Trials of Mana JPN - Mirage Palace Interiors.png"
-dest_files=["res://.godot/imported/SNES - Trials of Mana JPN - Mirage Palace Interiors.png-1e370a6a4646a1d40bb5d2d675ae42cb.ctex"]
+source_file="res://Mapa/SNES - Final Fantasy 6 - Tzen Interior.png"
+dest_files=["res://.godot/imported/SNES - Final Fantasy 6 - Tzen Interior.png-e5abcd9fda28f4471b51590672b7dbaf.ctex"]
 
 [params]
 

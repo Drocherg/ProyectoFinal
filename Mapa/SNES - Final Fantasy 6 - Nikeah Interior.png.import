@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3mk42sy6y21b"
-path="res://.godot/imported/SNES - Trials of Mana JPN - Mirage Palace Interiors.png-1e370a6a4646a1d40bb5d2d675ae42cb.ctex"
+uid="uid://cvuswow5dlshe"
+path="res://.godot/imported/SNES - Final Fantasy 6 - Nikeah Interior.png-8c1702dfcda83cb96d2c1fc2c0b5cfdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mapa/SNES - Trials of Mana JPN - Mirage Palace Interiors.png"
-dest_files=["res://.godot/imported/SNES - Trials of Mana JPN - Mirage Palace Interiors.png-1e370a6a4646a1d40bb5d2d675ae42cb.ctex"]
+source_file="res://Mapa/SNES - Final Fantasy 6 - Nikeah Interior.png"
+dest_files=["res://.godot/imported/SNES - Final Fantasy 6 - Nikeah Interior.png-8c1702dfcda83cb96d2c1fc2c0b5cfdb.ctex"]
 
 [params]
 
