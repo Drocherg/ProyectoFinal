@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://bamxms25qshjj"]
+
+[node name="Opciones" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -934.0
+offset_top = -204.0
+offset_right = 1046.0
+offset_bottom = 876.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.929481, 1.77177)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "OPCIONES"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "SONIDO:
+"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="CheckButton" type="CheckButton" parent="MarginContainer/VBoxContainer/Label2"]
+layout_mode = 0
+offset_left = 1050.05
+offset_top = 0.0915518
+offset_right = 1094.05
+offset_bottom = 24.0916
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "CREDITOS"
+
+[node name="Button3" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "VOLVER"

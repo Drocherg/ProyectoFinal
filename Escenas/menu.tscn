@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://c70y2y37cvwh6"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_ap2sx"]
+[ext_resource type="Texture2D" uid="uid://dlo87r7i0ywm8" path="res://Menu/BackgroundMenu.png" id="2_q1l3w"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_right = -28.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ap2sx")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1952.0
+offset_bottom = 1080.0
+texture = ExtResource("2_q1l3w")
+
+[node name="MarginContainer" type="MarginContainer" parent="Background"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 208.0
+offset_right = 2020.0
+offset_bottom = 1288.0
+scale = Vector2(0.929481, 1.77177)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Background/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "BALDUR'S FANTASY"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Button" type="Button" parent="Background/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "JUGAR"
+
+[node name="Button2" type="Button" parent="Background/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "OPCIONES"
+
+[node name="Button3" type="Button" parent="Background/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "SALIR"
+
+[connection signal="pressed" from="Background/MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Background/MarginContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Background/MarginContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

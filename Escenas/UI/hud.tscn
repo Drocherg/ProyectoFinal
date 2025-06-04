@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://buyhmg1crdokf"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Stats" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HealthBar" type="ProgressBar" parent="MarginContainer/Stats"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Stats/HealthBar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnergyBar" type="ProgressBar" parent="MarginContainer/Stats"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Stats/EnergyBar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="GoldContainer" type="HBoxContainer" parent="MarginContainer/Stats"]
+layout_mode = 2
+
+[node name="GoldIcon" type="TextureRect" parent="MarginContainer/Stats/GoldContainer"]
+layout_mode = 2
+
+[node name="GoldLabel" type="Label" parent="MarginContainer/Stats/GoldContainer"]
+layout_mode = 2
+
+[node name="LevelContainer" type="HBoxContainer" parent="MarginContainer/Stats"]
+layout_mode = 2
+
+[node name="LevelLabel" type="Label" parent="MarginContainer/Stats/LevelContainer"]
+layout_mode = 2
+
+[node name="QuickSlots" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxo81dx2v5b02"]
+
+[ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_56pkt"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_56pkt")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Stats" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HealthBar" type="ProgressBar" parent="MarginContainer/Stats"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Stats/HealthBar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnergyBar" type="ProgressBar" parent="MarginContainer/Stats"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Stats/EnergyBar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="GoldContainer" type="HBoxContainer" parent="MarginContainer/Stats"]
+layout_mode = 2
+
+[node name="GoldIcon" type="TextureRect" parent="MarginContainer/Stats/GoldContainer"]
+layout_mode = 2
+
+[node name="GoldLabel" type="Label" parent="MarginContainer/Stats/GoldContainer"]
+layout_mode = 2
+
+[node name="LevelContainer" type="HBoxContainer" parent="MarginContainer/Stats"]
+layout_mode = 2
+
+[node name="LevelLabel" type="Label" parent="MarginContainer/Stats/LevelContainer"]
+layout_mode = 2
+
+[node name="QuickSlots" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

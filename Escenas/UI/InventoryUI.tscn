@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6gbt7x1oxq5t"]
+
+[ext_resource type="Script" path="res://Scripts/InventoryUI.gd" id="1_1k8cj"]
+
+[node name="InventoryUI" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -990.0
+offset_top = -540.0
+offset_right = -990.0
+offset_bottom = -540.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1k8cj")
+
+[node name="InventoryPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="InventoryPanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HeaderContainer" type="HBoxContainer" parent="InventoryPanel/MarginContainer"]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="InventoryPanel/MarginContainer/HeaderContainer"]
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="InventoryPanel/MarginContainer/HeaderContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InventoryPanel/MarginContainer"]
+layout_mode = 2
+
+[node name="InventoryContainer" type="VBoxContainer" parent="InventoryPanel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="InventoryLabel" type="Label" parent="InventoryPanel/MarginContainer/HBoxContainer/InventoryContainer"]
+layout_mode = 2
+text = "Inventory"
+
+[node name="GridContainer" type="GridContainer" parent="InventoryPanel/MarginContainer/HBoxContainer/InventoryContainer"]
+layout_mode = 2
+
+[node name="EquipmentContainer" type="VBoxContainer" parent="InventoryPanel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+script = ExtResource("1_1k8cj")
+
+[node name="EquipmentLabel" type="Label" parent="InventoryPanel/MarginContainer/HBoxContainer/EquipmentContainer"]
+layout_mode = 2
+text = "Equipamiento"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InventoryPanel/MarginContainer/HBoxContainer/EquipmentContainer"]
+layout_mode = 2
+
+[node name="ItemInfoPanel" type="Panel" parent="InventoryPanel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InventoryPanel/MarginContainer/HBoxContainer/ItemInfoPanel"]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 6.0
+offset_right = 154.0
+offset_bottom = 95.0
+
+[node name="ItemNameLabel" type="Label" parent="InventoryPanel/MarginContainer/HBoxContainer/ItemInfoPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="ItemDescriptionLabel" type="Label" parent="InventoryPanel/MarginContainer/HBoxContainer/ItemInfoPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="ItemStatsLabel" type="Label" parent="InventoryPanel/MarginContainer/HBoxContainer/ItemInfoPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="InventoryPanel/MarginContainer/HBoxContainer/ItemInfoPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="EquipButton" type="Button" parent="InventoryPanel/MarginContainer/HBoxContainer/ItemInfoPanel/VBoxContainer/ButtonsContainer"]
+layout_mode = 2
+
+[node name="UnequipButton" type="Button" parent="InventoryPanel/MarginContainer/HBoxContainer/ItemInfoPanel/VBoxContainer/ButtonsContainer"]
+layout_mode = 2
+
+[node name="UseButton" type="Button" parent="InventoryPanel/MarginContainer/HBoxContainer/ItemInfoPanel/VBoxContainer/ButtonsContainer"]
+layout_mode = 2
